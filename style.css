@@ -9,6 +9,24 @@ p{
   text-shadow: rgba(255,140,0,1) 0px 0px 16px;
  }
 
-.HImg{
- align-self: center;
+.header{
+  padding-top: 7px;
+  text-align: center;
+}
+
+.header img{
+  width: 30%;
+}
+.header hr{
+
+  width:20%;
+  size: 3;
+  color: #FF8C00;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+}
+
+.introtxt{
+  text-align: center;
+  padding-top: 10%;
+
 }
