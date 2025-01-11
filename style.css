@@ -1,0 +1,14 @@
+body {
+  background-color: #000000;
+  animation: grain 8s steps(10) infinite;
+}
+
+p{
+  color:#FF8C00;
+  font-family: "Courier New", monospace;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+ }
+
+.HImg{
+ align-self: center;
+}
