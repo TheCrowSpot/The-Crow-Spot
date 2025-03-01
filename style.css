@@ -145,7 +145,7 @@ body {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 0.15s infinite;
+  animation: flicker 5s infinite;
 }
 .crt::before {
   content: " ";
@@ -155,7 +155,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: linear-gradient(rgba(18, 16, 16, 0) 70%, rgba(0, 0, 0, 0.25) 60%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
@@ -173,11 +173,12 @@ p, h1{
 
 .menu{
   color:#FF8C00;
-  font-family: "Courier New", monospace;
+  font-family: "Courier New", monospace, bold;
   text-shadow: rgba(255,140,0,1) 0px 0px 16px;
   text-align: center;
   padding-top: 8px;
   border-right: 5px solid #ff8c00;
+  font-size: 22px;
 }
 li{
   display:inline;
@@ -200,6 +201,15 @@ a:hover{
   size: 3;
   color: #FF8C00;
   text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+}
+.soundenable{
+  font-size: 14px;
+  font-style: bold 2px;
+  color:#FFBF00;
+  text-decoration: underline;
+}
+.soundenable:hover{
+  font-style: italic;
 }
 .introtxt{
   text-align: center;
