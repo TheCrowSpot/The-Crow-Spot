@@ -70,7 +70,7 @@ body {
 }
 @keyframes textShadow {
   0% {
-    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 3px;
+    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 5px;
   }
   5% {
     text-shadow: 2.7928974010788217px 0 1px rgba(0,30,255,0.5), -2.7928974010788217px 0 1px rgba(255,0,80,0.3), 0 0 3px;
@@ -145,7 +145,7 @@ body {
   opacity: 0;
   z-index: 2;
   pointer-events: none;
-  animation: flicker 5s infinite;
+  animation: flicker 10s infinite;
 }
 .crt::before {
   content: " ";
@@ -155,7 +155,7 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 70%, rgba(0, 0, 0, 0.25) 60%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background: linear-gradient(rgba(18, 16, 16, 0) 85%, rgba(0, 0, 0, 0.25) 80%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
@@ -165,6 +165,13 @@ body {
 }
 /* CRT Animation */
 
+.startop{
+  color:#FF8C00;
+  padding: 9px;
+  position: relative;
+
+}
+
 p, h1{
   color:#FF8C00;
   font-family: "Courier New", monospace;
@@ -173,18 +180,20 @@ p, h1{
 
 .menu{
   color:#FF8C00;
-  font-family: "Courier New", monospace, bold;
+  font-family: "Courier New", monospace;
   text-shadow: rgba(255,140,0,1) 0px 0px 16px;
   text-align: center;
   padding-top: 8px;
-  border-right: 5px solid #ff8c00;
   font-size: 22px;
+  display: block;
 }
 li{
   display:inline;
 }
 a:link, a:visited{
   color:#FF8C00;
+  text-decoration: none;
+
 }
 a:hover{
   color:#FFBF00;
@@ -209,10 +218,42 @@ a:hover{
   text-decoration: underline;
 }
 .soundenable:hover{
-  font-style: italic;
+font-weight: bold;
 }
+
 .introtxt{
   text-align: center;
   padding-top: 10%;
   font-size: 20px;
+
 }
+
+/* NEW side bar */
+.bottombar{
+ position: fixed;
+ bottom: 3px;
+ width: 99%;
+ text-align: center;
+ border: 2px double #ff8c00;
+ background-color: rgba(255, 140, 0, 0.09);
+}
+.marquee{
+  float: left;
+  width: 93%;
+  padding: 6px;
+
+}
+.new{
+  float: left;
+  color: #ffbf00;
+  padding: 6px;
+  padding-top: 9px;
+}
+.newscroll{
+  color:#FF8C00;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+
+}
+/* NEW side bar */
