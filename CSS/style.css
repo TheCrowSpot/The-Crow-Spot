@@ -1,6 +1,6 @@
 
 
-/* CRT Animation */
+/* CRT Animation [[credits --> http://aleclownes.com/2017/02/01/crt-display.html]] */
 .crt::after {
   content: " ";
   display: block;
@@ -161,7 +161,6 @@
     text-shadow: 2.6208764473832513px 0 1px rgba(0,30,255,0.5), -2.6208764473832513px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
 }
-
 body {
   background-color: #02080c;
 
@@ -216,6 +215,15 @@ a:hover{
   padding-top: 8px;
   font-size: 22px;
   display: block;
+}
+.menu hr{
+  border-bottom: doube;
+  margin-top: 20px;
+  width:40%;
+  size: 3;
+  color: #FF8C00;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+
 }
 .startop{
   color:#FF8C00;
