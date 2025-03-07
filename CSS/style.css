@@ -217,10 +217,9 @@ a:hover{
   display: block;
 }
 .menu hr{
-  border-bottom: doube;
-  margin-top: 20px;
+  margin-top: 10px;
   width:40%;
-  size: 3;
+  size: 2;
   color: #FF8C00;
   text-shadow: rgba(255,140,0,1) 0px 0px 16px;
 
@@ -230,6 +229,40 @@ a:hover{
   padding: 9px;
   position: relative;
 
+}
+.searchbar{
+  margin-top: 10px;
+}
+.searchbar .input{
+  overflow: hidden;
+  background-color: #081e2e;
+  font-size: 18px;
+  border: none;
+}
+.searchbar .input[type=text]{
+  color: #ff8c00;
+  font-family: "Courier New", monospace;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+  font-weight: 400;
+}
+.searchbar .input[type=text]:hover{
+  color: #FFBF00;
+  text-shadow: rgba(255,140,0,1) 0px 0px 16px;
+  font-style: italic;
+}
+.form #clear{
+  background: #081e2e;
+  color: #ff8c00;
+  border-color: #ff8c00;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top: 1px;
+  border-left: 1px;
+  border-right: 1px;
+}
+.form #clear:hover{
+  background: rgba(255, 140, 0, 0.4);
+  color: #FFBF00;
 }
 /*overall settings*/
 
@@ -250,13 +283,18 @@ a:hover{
 }
 .artbuttons a:hover{
   color: #ffbf00;
+  background-color: rgba(255, 140, 0, 0.3);
+  padding: 11px;
+  box-shadow: rgba(255,140,0,0.5) 0px 0px 10px
+  transition-delay: 0.2s ease;
+  
 }
 
 .artbuttons .unabled:hover{
   color: red;
   font-family: "Courier New", monospace;
-  text-shadow: rgba( 204, 10, 0,1) 0px 0px 16px;
-  background-color: rgba( 204, 10, 0, 0.09);
+  text-shadow: rgba( 204, 10, 0, 1) 0px 0px 16px;
+  background-color: rgba( 204, 10, 0, 0.6);
   border: 4px solid red;
   margin: 1px;
   padding: 10px;
