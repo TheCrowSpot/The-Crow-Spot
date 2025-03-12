@@ -46,15 +46,13 @@
   <h1>2021</h1>
   <br>
   <div class="artbuttons">
-    <li><a onclick="showImg()">MLP</a></li>
+    <li><a onclick="showImg()" href= "../.artpages/imgtemp.html">MLP</a></li>
     <li><a href="../../pages/404.html" class="unabled">SHARKKIN</a></li>
     <li><a href="../../pages/404.html" class="unabled">UNSORTED</a></li>
     <script type="text/javascript">
-      const showImg = async() =>{
-        let imgId = "mlp"
+      function showImg(){
+        let imgId = "mlp";
         localStorage.setItem(imgId, "value");
-        await new Promise(resolve => setTimeout(resolve, 500))
-        window.location.href = "../.artpages/imgtemp.html"
       }
     </script>
   </div>
